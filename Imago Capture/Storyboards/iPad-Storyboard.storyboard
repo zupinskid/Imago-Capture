@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hl2-be-FqU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDa-cE-lm3">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,56 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="P1O-QC-Omd">
+        <!--Navigation Controller-->
+        <scene sceneID="Fn8-jC-VZo">
             <objects>
-                <viewController id="Hl2-be-FqU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IEQ-74-KJw">
+                <navigationController toolbarHidden="NO" id="7dc-vu-KsH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nPk-1d-XF6">
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u5L-gA-her">
+                        <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="wLq-Rl-b6t" kind="relationship" relationship="rootViewController" id="qJ4-Cw-meo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fis-gh-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286" y="-594"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bb8-gH-oQd">
+            <objects>
+                <viewController id="IDa-cE-lm3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Us6-CC-OXa">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="qWR-Ya-DCe"/>
+                        <viewLayoutGuide key="safeArea" id="Nqg-pe-jwf"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g0n-Gn-KAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dez-v2-e3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1879" y="-622"/>
+            <point key="canvasLocation" x="-1953" y="-594"/>
+        </scene>
+        <!--Capture and View-->
+        <scene sceneID="PKj-Og-GAX">
+            <objects>
+                <viewController id="wLq-Rl-b6t" customClass="ViewController" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RLs-tb-a7s">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="TeE-qD-c2f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Capture and View" id="ESv-Q9-qTP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOj-kz-twF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-594"/>
         </scene>
     </scenes>
 </document>
