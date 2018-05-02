@@ -14,6 +14,7 @@
 		0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCC2098E20500266669 /* LaunchScreen.storyboard */; };
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
+		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0C211BDF2098E20600266669 /* Imago CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imago CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,7 @@
 			children = (
 				0C211BC32098E20500266669 /* AppDelegate.swift */,
 				0C211BC52098E20500266669 /* ViewController.swift */,
-				0C211BC72098E20500266669 /* Main.storyboard */,
+				0CAC88882098E5AF00C5D44F /* Storyboards */,
 				0C211BCA2098E20500266669 /* Assets.xcassets */,
 				0C211BCC2098E20500266669 /* LaunchScreen.storyboard */,
 				0C211BCF2098E20500266669 /* Info.plist */,
@@ -123,6 +125,15 @@
 				0C211BE52098E20600266669 /* Info.plist */,
 			);
 			path = "Imago CaptureUITests";
+			sourceTree = "<group>";
+		};
+		0CAC88882098E5AF00C5D44F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0C211BC72098E20500266669 /* Main.storyboard */,
+				0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */,
+				0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */,
 				0C211BCB2098E20500266669 /* Assets.xcassets in Resources */,
 				0C211BC92098E20500266669 /* Main.storyboard in Resources */,
 			);
@@ -429,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8US8ZFZ7U;
 				INFOPLIST_FILE = "Imago Capture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8US8ZFZ7U;
 				INFOPLIST_FILE = "Imago Capture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
