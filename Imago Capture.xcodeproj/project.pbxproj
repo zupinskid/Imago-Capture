@@ -15,6 +15,9 @@
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
+		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
+		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
+		D525F74E8DB929A1EC7E8226 /* Pods_Imago_CaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BC02098E20500266669 /* Imago Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imago Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BC32098E20500266669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C211BC52098E20500266669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
+		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
+		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_CaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A112A5607245AEEF9DF4423F /* Pods-Imago CaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_CaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1354B9AF57116B903106963 /* Pods-Imago Capture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.debug.xcconfig"; sourceTree = "<group>"; };
+		E397BEFFDD12525E10229B74 /* Pods-Imago CaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureUITests/Pods-Imago CaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E807DECE59BE988C18D89DCD /* Pods-Imago CaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureUITests/Pods-Imago CaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D525F74E8DB929A1EC7E8226 /* Pods_Imago_CaptureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				0C211BD72098E20600266669 /* Imago CaptureTests */,
 				0C211BE22098E20600266669 /* Imago CaptureUITests */,
 				0C211BC12098E20500266669 /* Products */,
+				957822ECC5D53F90C0E77603 /* Pods */,
+				CAF4C36F05186FA0FF7D2E32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,29 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		957822ECC5D53F90C0E77603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1354B9AF57116B903106963 /* Pods-Imago Capture.debug.xcconfig */,
+				2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */,
+				A112A5607245AEEF9DF4423F /* Pods-Imago CaptureTests.debug.xcconfig */,
+				2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */,
+				E397BEFFDD12525E10229B74 /* Pods-Imago CaptureUITests.debug.xcconfig */,
+				E807DECE59BE988C18D89DCD /* Pods-Imago CaptureUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAF4C36F05186FA0FF7D2E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */,
+				78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */,
+				A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C211BE82098E20600266669 /* Build configuration list for PBXNativeTarget "Imago Capture" */;
 			buildPhases = (
+				04D504C2F2E32946ADFC8796 /* [CP] Check Pods Manifest.lock */,
 				0C211BBC2098E20500266669 /* Sources */,
 				0C211BBD2098E20500266669 /* Frameworks */,
 				0C211BBE2098E20500266669 /* Resources */,
+				409DDA4F91A6FBB088E8C186 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C211BEB2098E20600266669 /* Build configuration list for PBXNativeTarget "Imago CaptureTests" */;
 			buildPhases = (
+				56A41F591C3B67E08F262D97 /* [CP] Check Pods Manifest.lock */,
 				0C211BD02098E20600266669 /* Sources */,
 				0C211BD12098E20600266669 /* Frameworks */,
 				0C211BD22098E20600266669 /* Resources */,
@@ -178,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C211BEE2098E20600266669 /* Build configuration list for PBXNativeTarget "Imago CaptureUITests" */;
 			buildPhases = (
+				93232FDF092D8F98ED598B6B /* [CP] Check Pods Manifest.lock */,
 				0C211BDB2098E20600266669 /* Sources */,
 				0C211BDC2098E20600266669 /* Frameworks */,
 				0C211BDD2098E20600266669 /* Resources */,
@@ -265,6 +309,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D504C2F2E32946ADFC8796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imago Capture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		409DDA4F91A6FBB088E8C186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BFOAuth/BFOAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/CloudSight/CloudSight.framework",
+				"${BUILT_PRODUCTS_DIR}/RequestUtils/RequestUtils.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BFOAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloudSight.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RequestUtils.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56A41F591C3B67E08F262D97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imago CaptureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93232FDF092D8F98ED598B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imago CaptureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C211BBC2098E20500266669 /* Sources */ = {
@@ -436,6 +559,7 @@
 		};
 		0C211BE92098E20600266669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1354B9AF57116B903106963 /* Pods-Imago Capture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +576,7 @@
 		};
 		0C211BEA2098E20600266669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +593,7 @@
 		};
 		0C211BEC2098E20600266669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A112A5607245AEEF9DF4423F /* Pods-Imago CaptureTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +611,7 @@
 		};
 		0C211BED2098E20600266669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +629,7 @@
 		};
 		0C211BEF2098E20600266669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E397BEFFDD12525E10229B74 /* Pods-Imago CaptureUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +646,7 @@
 		};
 		0C211BF02098E20600266669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E807DECE59BE988C18D89DCD /* Pods-Imago CaptureUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

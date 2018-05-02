@@ -6,7 +6,7 @@ target 'Imago Capture' do
   use_frameworks!
 
   # Pods for Imago Capture
-pod 'CloudVisionSwift', :path => '../'
+pod "CloudSight", "~> 1.0"
   target 'Imago CaptureTests' do
     inherit! :search_paths
     # Pods for testing

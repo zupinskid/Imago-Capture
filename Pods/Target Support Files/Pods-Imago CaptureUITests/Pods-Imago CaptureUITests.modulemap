@@ -1,0 +1,6 @@
+framework module Pods_Imago_CaptureUITests {
+  umbrella header "Pods-Imago CaptureUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
