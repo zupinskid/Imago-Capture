@@ -8,7 +8,8 @@ target 'Imago Capture' do
   use_frameworks!
 
   # Pods for Imago Capture
-pod "CloudSight", "~> 1.0"
+  pod "CloudSight", "~> 1.0"
+  pod 'SwiftyJSON', '~> 3.1'
   target 'Imago CaptureTests' do
     inherit! :search_paths
     # Pods for testing
