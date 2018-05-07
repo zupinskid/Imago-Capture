@@ -10,13 +10,6 @@ DEPENDENCIES:
   - CloudSight (~> 1.0)
   - SwiftyJSON (~> 3.1)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - BFOAuth
-    - CloudSight
-    - RequestUtils
-    - SwiftyJSON
-
 SPEC CHECKSUMS:
   BFOAuth: e3c2e4eaae862a89bc301ed6f292d3cd0d6a107b
   CloudSight: cbf69900984e30d16498d8282c1cd13b844c0071
@@ -25,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f645f67f6118b0b43e7658346a1d2da536ced807
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0

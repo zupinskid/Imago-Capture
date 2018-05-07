@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,14 +53,68 @@
                     <view key="view" contentMode="scaleToFill" id="RLs-tb-a7s">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tKF-W3-nxk">
+                                <rect key="frame" x="20" y="336" width="728" height="341"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-QQ-ufS">
+                                <rect key="frame" x="20" y="291" width="728" height="119"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="CcZ-Jl-gIw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tVS-fn-bvw">
+                                <rect key="frame" x="20" y="403" width="728" height="135"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="QxZ-XC-O3u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-pq-Isj">
+                                <rect key="frame" x="367" y="454" width="37" height="37"/>
+                                <color key="color" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLs-eP-40y">
+                                <rect key="frame" x="218" y="704" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z1M-Ku-88V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Choose an image to analyze">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tKF-W3-nxk" firstAttribute="top" secondItem="TeE-qD-c2f" secondAttribute="top" constant="272" id="0Hu-D6-Ns9"/>
+                            <constraint firstItem="Vhc-QQ-ufS" firstAttribute="leading" secondItem="RLs-tb-a7s" secondAttribute="leadingMargin" id="30r-QS-khn"/>
+                            <constraint firstItem="tKF-W3-nxk" firstAttribute="leading" secondItem="tVS-fn-bvw" secondAttribute="leading" id="5t3-l2-aD3"/>
+                            <constraint firstItem="tVS-fn-bvw" firstAttribute="top" secondItem="TeE-qD-c2f" secondAttribute="top" constant="339" id="E90-L7-DOt"/>
+                            <constraint firstItem="Vhc-QQ-ufS" firstAttribute="trailing" secondItem="RLs-tb-a7s" secondAttribute="trailingMargin" id="HCC-WO-o3p"/>
+                            <constraint firstItem="oLs-eP-40y" firstAttribute="top" secondItem="tKF-W3-nxk" secondAttribute="bottom" constant="27" id="Jp4-Is-2qa"/>
+                            <constraint firstItem="Vhc-QQ-ufS" firstAttribute="top" secondItem="TeE-qD-c2f" secondAttribute="top" constant="227" id="O6G-5I-6dW"/>
+                            <constraint firstItem="Vhc-QQ-ufS" firstAttribute="leading" secondItem="tVS-fn-bvw" secondAttribute="leading" id="Pqe-B2-uIL"/>
+                            <constraint firstItem="oLs-eP-40y" firstAttribute="leading" secondItem="TeE-qD-c2f" secondAttribute="leading" constant="218" id="QIg-Zj-Cbe"/>
+                            <constraint firstItem="BC7-pq-Isj" firstAttribute="leading" secondItem="TeE-qD-c2f" secondAttribute="leading" constant="367" id="W7G-Ve-VrI"/>
+                            <constraint firstItem="Vhc-QQ-ufS" firstAttribute="trailing" secondItem="tVS-fn-bvw" secondAttribute="trailing" id="eU8-OG-hS5"/>
+                            <constraint firstItem="BC7-pq-Isj" firstAttribute="top" secondItem="Vhc-QQ-ufS" secondAttribute="bottom" constant="44" id="kUb-7S-gfv"/>
+                            <constraint firstItem="BC7-pq-Isj" firstAttribute="centerX" secondItem="oLs-eP-40y" secondAttribute="centerX" id="let-H4-sWT"/>
+                            <constraint firstItem="TeE-qD-c2f" firstAttribute="bottom" secondItem="oLs-eP-40y" secondAttribute="bottom" constant="246" id="opc-IC-Yhz"/>
+                            <constraint firstItem="tKF-W3-nxk" firstAttribute="trailing" secondItem="tVS-fn-bvw" secondAttribute="trailing" id="p4B-AB-YBH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TeE-qD-c2f"/>
                     </view>
                     <navigationItem key="navigationItem" title="Capture and View" id="ESv-Q9-qTP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOj-kz-twF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="-594"/>
+            <point key="canvasLocation" x="-516.40625" y="-594.140625"/>
         </scene>
     </scenes>
 </document>

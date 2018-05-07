@@ -14,6 +14,8 @@
 		0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCC2098E20500266669 /* LaunchScreen.storyboard */; };
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
+		0C840820209CD9C400902692 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84081F209CD9C400902692 /* MenuView.swift */; };
+		0C840822209CDBA900902692 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C840821209CDBA900902692 /* roundedButton.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
 		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
 		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
@@ -52,6 +54,8 @@
 		0C211BDF2098E20600266669 /* Imago CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imago CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C84081F209CD9C400902692 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0C840821209CDBA900902692 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
 		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
 		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			children = (
 				0C211BC32098E20500266669 /* AppDelegate.swift */,
 				0C211BC52098E20500266669 /* ViewController.swift */,
+				0C84081F209CD9C400902692 /* MenuView.swift */,
+				0C840821209CDBA900902692 /* roundedButton.swift */,
 				0CAC88882098E5AF00C5D44F /* Storyboards */,
 				0C211BCA2098E20500266669 /* Assets.xcassets */,
 				0C211BCC2098E20500266669 /* LaunchScreen.storyboard */,
@@ -188,6 +194,7 @@
 				0C211BBD2098E20500266669 /* Frameworks */,
 				0C211BBE2098E20500266669 /* Resources */,
 				409DDA4F91A6FBB088E8C186 /* [CP] Embed Pods Frameworks */,
+				61AABF64AD98B8F5042F7C43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +213,8 @@
 				0C211BD02098E20600266669 /* Sources */,
 				0C211BD12098E20600266669 /* Frameworks */,
 				0C211BD22098E20600266669 /* Resources */,
+				FE2B3E2B955080A0B5FEA55E /* [CP] Embed Pods Frameworks */,
+				2071A238FC4DC6AB50BC292F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +234,8 @@
 				0C211BDB2098E20600266669 /* Sources */,
 				0C211BDC2098E20600266669 /* Frameworks */,
 				0C211BDD2098E20600266669 /* Resources */,
+				77A6036A9F0B25322D70917E /* [CP] Embed Pods Frameworks */,
+				DD8C835B69045BEA7E24EFDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +340,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2071A238FC4DC6AB50BC292F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		409DDA4F91A6FBB088E8C186 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +397,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		61AABF64AD98B8F5042F7C43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A6036A9F0B25322D70917E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago CaptureUITests/Pods-Imago CaptureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		93232FDF092D8F98ED598B6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +445,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD8C835B69045BEA7E24EFDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago CaptureUITests/Pods-Imago CaptureUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2B3E2B955080A0B5FEA55E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -397,7 +483,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C211BC62098E20500266669 /* ViewController.swift in Sources */,
+				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
+				0C840822209CDBA900902692 /* roundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

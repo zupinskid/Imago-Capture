@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuView" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,19 +26,28 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o5Y-CD-QV4">
                                 <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Imago Capture" id="CSW-x0-NV8"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xe-o2-Go6">
+                                <rect key="frame" x="16" y="748" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ped-z5-6dr"/>
+                    <connections>
+                        <outlet property="startButton" destination="9Xe-o2-Go6" id="Z5N-dm-5Rm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2130.4000000000001" y="-594.0886699507389"/>
+            <point key="canvasLocation" x="-2130.5" y="-595"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnU-eS-1E0">
@@ -52,12 +61,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-VR-xM7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-VR-xM7">
                                 <rect key="frame" x="16" y="109" width="343" height="332"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tID-e4-Xc2">
                                 <rect key="frame" x="0.0" y="64" width="375" height="115"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Jio-VH-41T"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -83,22 +95,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xBk-VR-xM7" firstAttribute="top" secondItem="mvp-jM-uK2" secondAttribute="bottom" constant="21" id="0PQ-oo-2BA"/>
-                            <constraint firstItem="xBk-VR-xM7" firstAttribute="centerY" secondItem="Fsa-4P-xM7" secondAttribute="centerY" id="0d8-zh-sET"/>
+                            <constraint firstItem="xBk-VR-xM7" firstAttribute="leading" secondItem="ydM-XV-xjv" secondAttribute="leadingMargin" id="0lb-Ff-vZb"/>
+                            <constraint firstItem="xBk-VR-xM7" firstAttribute="centerX" secondItem="NJh-uM-9jd" secondAttribute="centerX" id="19t-0Q-Vka"/>
                             <constraint firstItem="NJh-uM-9jd" firstAttribute="centerX" secondItem="Fsa-4P-xM7" secondAttribute="centerX" id="5IP-oP-8Xf"/>
                             <constraint firstItem="Fsa-4P-xM7" firstAttribute="centerX" secondItem="EkE-ZM-6h2" secondAttribute="centerX" id="Ey0-hh-6v7"/>
+                            <constraint firstItem="EkE-ZM-6h2" firstAttribute="top" secondItem="xBk-VR-xM7" secondAttribute="bottom" constant="36" id="LVM-yQ-han"/>
                             <constraint firstAttribute="trailing" secondItem="tID-e4-Xc2" secondAttribute="trailing" id="N1j-wf-gIE"/>
                             <constraint firstItem="NJh-uM-9jd" firstAttribute="top" secondItem="mvp-jM-uK2" secondAttribute="bottom" constant="88" id="NQ3-dD-SuS"/>
-                            <constraint firstItem="xBk-VR-xM7" firstAttribute="centerX" secondItem="NJh-uM-9jd" secondAttribute="centerX" id="PuU-8N-HME"/>
                             <constraint firstItem="tID-e4-Xc2" firstAttribute="leading" secondItem="ydM-XV-xjv" secondAttribute="leading" id="RBu-9C-4my"/>
                             <constraint firstItem="Fsa-4P-xM7" firstAttribute="top" secondItem="tID-e4-Xc2" secondAttribute="bottom" constant="56" id="VRn-CI-Zd6"/>
-                            <constraint firstItem="xBk-VR-xM7" firstAttribute="leading" secondItem="Se6-8g-Uwb" secondAttribute="leading" constant="32" id="Y2b-HB-9Eu"/>
                             <constraint firstItem="tID-e4-Xc2" firstAttribute="trailing" secondItem="NJh-uM-9jd" secondAttribute="trailing" id="aZc-Au-MKd"/>
                             <constraint firstItem="tID-e4-Xc2" firstAttribute="leading" secondItem="NJh-uM-9jd" secondAttribute="leading" id="bQg-e0-xkG"/>
                             <constraint firstItem="tID-e4-Xc2" firstAttribute="top" secondItem="ydM-XV-xjv" secondAttribute="topMargin" constant="-24" id="go6-Ok-g9O"/>
-                            <constraint firstItem="NJh-uM-9jd" firstAttribute="centerY" secondItem="xBk-VR-xM7" secondAttribute="centerY" id="jTI-MI-qne"/>
+                            <constraint firstItem="NJh-uM-9jd" firstAttribute="centerY" secondItem="Fsa-4P-xM7" secondAttribute="centerY" id="jK4-Br-KXc"/>
                             <constraint firstItem="AuT-np-fbY" firstAttribute="top" secondItem="EkE-ZM-6h2" secondAttribute="bottom" constant="271" id="prA-QH-w2u"/>
-                            <constraint firstItem="EkE-ZM-6h2" firstAttribute="top" secondItem="xBk-VR-xM7" secondAttribute="bottom" constant="96" id="vpO-Mj-1ZZ"/>
+                            <constraint firstItem="xBk-VR-xM7" firstAttribute="top" secondItem="mvp-jM-uK2" secondAttribute="bottom" constant="21" id="wpl-1J-iUf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Se6-8g-Uwb"/>
                     </view>

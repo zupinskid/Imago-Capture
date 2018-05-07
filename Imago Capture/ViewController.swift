@@ -258,4 +258,4 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     default:
         return rhs < lhs
     }
-}
+    }
