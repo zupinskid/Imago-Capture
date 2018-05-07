@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0ADF0220A0D1A8001869B7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0ADF0020A0D1A8001869B7 /* Interface.storyboard */; };
+		0C0ADF0420A0D1A8001869B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0ADF0320A0D1A8001869B7 /* Assets.xcassets */; };
+		0C0ADF0B20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C0ADF0A20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C0ADF1020A0D1A8001869B7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0ADF0F20A0D1A8001869B7 /* InterfaceController.swift */; };
+		0C0ADF1220A0D1A8001869B7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0ADF1120A0D1A8001869B7 /* ExtensionDelegate.swift */; };
+		0C0ADF1420A0D1A8001869B7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0ADF1320A0D1A8001869B7 /* ComplicationController.swift */; };
+		0C0ADF1620A0D1A8001869B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0ADF1520A0D1A8001869B7 /* Assets.xcassets */; };
+		0C0ADF1A20A0D1A8001869B7 /* Imago Capture for WatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0C0ADEFE20A0D1A8001869B7 /* Imago Capture for WatchOS.app */; };
 		0C211BC42098E20500266669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC32098E20500266669 /* AppDelegate.swift */; };
 		0C211BC62098E20500266669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC52098E20500266669 /* ViewController.swift */; };
 		0C211BC92098E20500266669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BC72098E20500266669 /* Main.storyboard */; };
@@ -23,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0C0ADF0C20A0D1A8001869B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C211BB82098E20500266669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0ADF0920A0D1A8001869B7;
+			remoteInfo = "Imago Capture for WatchOS Extension";
+		};
+		0C0ADF1820A0D1A8001869B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C211BB82098E20500266669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0ADEFD20A0D1A8001869B7;
+			remoteInfo = "Imago Capture for WatchOS";
+		};
 		0C211BD52098E20600266669 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0C211BB82098E20500266669 /* Project object */;
@@ -39,8 +61,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C0ADF2020A0D1A8001869B7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C0ADF0B20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0ADF2220A0D1A8001869B7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0C0ADF1A20A0D1A8001869B7 /* Imago Capture for WatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0ADEFE20A0D1A8001869B7 /* Imago Capture for WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imago Capture for WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0ADF0120A0D1A8001869B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0C0ADF0320A0D1A8001869B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C0ADF0520A0D1A8001869B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0ADF0A20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Imago Capture for WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0ADF0F20A0D1A8001869B7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0C0ADF1120A0D1A8001869B7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0C0ADF1320A0D1A8001869B7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0C0ADF1520A0D1A8001869B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C0ADF1720A0D1A8001869B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C211BC02098E20500266669 /* Imago Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imago Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BC32098E20500266669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C211BC52098E20500266669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +125,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C0ADF0720A0D1A8001869B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C211BBD2098E20500266669 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +159,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0ADEFF20A0D1A8001869B7 /* Imago Capture for WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C0ADF0020A0D1A8001869B7 /* Interface.storyboard */,
+				0C0ADF0320A0D1A8001869B7 /* Assets.xcassets */,
+				0C0ADF0520A0D1A8001869B7 /* Info.plist */,
+			);
+			path = "Imago Capture for WatchOS";
+			sourceTree = "<group>";
+		};
+		0C0ADF0E20A0D1A8001869B7 /* Imago Capture for WatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C0ADF0F20A0D1A8001869B7 /* InterfaceController.swift */,
+				0C0ADF1120A0D1A8001869B7 /* ExtensionDelegate.swift */,
+				0C0ADF1320A0D1A8001869B7 /* ComplicationController.swift */,
+				0C0ADF1520A0D1A8001869B7 /* Assets.xcassets */,
+				0C0ADF1720A0D1A8001869B7 /* Info.plist */,
+			);
+			path = "Imago Capture for WatchOS Extension";
+			sourceTree = "<group>";
+		};
 		0C211BB72098E20500266669 = {
 			isa = PBXGroup;
 			children = (
 				0C211BC22098E20500266669 /* Imago Capture */,
 				0C211BD72098E20600266669 /* Imago CaptureTests */,
 				0C211BE22098E20600266669 /* Imago CaptureUITests */,
+				0C0ADEFF20A0D1A8001869B7 /* Imago Capture for WatchOS */,
+				0C0ADF0E20A0D1A8001869B7 /* Imago Capture for WatchOS Extension */,
 				0C211BC12098E20500266669 /* Products */,
 				957822ECC5D53F90C0E77603 /* Pods */,
 				CAF4C36F05186FA0FF7D2E32 /* Frameworks */,
@@ -113,6 +201,8 @@
 				0C211BC02098E20500266669 /* Imago Capture.app */,
 				0C211BD42098E20600266669 /* Imago CaptureTests.xctest */,
 				0C211BDF2098E20600266669 /* Imago CaptureUITests.xctest */,
+				0C0ADEFE20A0D1A8001869B7 /* Imago Capture for WatchOS.app */,
+				0C0ADF0A20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +275,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0C0ADEFD20A0D1A8001869B7 /* Imago Capture for WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0ADF2120A0D1A8001869B7 /* Build configuration list for PBXNativeTarget "Imago Capture for WatchOS" */;
+			buildPhases = (
+				0C0ADEFC20A0D1A8001869B7 /* Resources */,
+				0C0ADF2020A0D1A8001869B7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0ADF0D20A0D1A8001869B7 /* PBXTargetDependency */,
+			);
+			name = "Imago Capture for WatchOS";
+			productName = "Imago Capture for WatchOS";
+			productReference = 0C0ADEFE20A0D1A8001869B7 /* Imago Capture for WatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0C0ADF0920A0D1A8001869B7 /* Imago Capture for WatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0ADF1F20A0D1A8001869B7 /* Build configuration list for PBXNativeTarget "Imago Capture for WatchOS Extension" */;
+			buildPhases = (
+				0C0ADF0620A0D1A8001869B7 /* Sources */,
+				0C0ADF0720A0D1A8001869B7 /* Frameworks */,
+				0C0ADF0820A0D1A8001869B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imago Capture for WatchOS Extension";
+			productName = "Imago Capture for WatchOS Extension";
+			productReference = 0C0ADF0A20A0D1A8001869B7 /* Imago Capture for WatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0C211BBF2098E20500266669 /* Imago Capture */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C211BE82098E20600266669 /* Build configuration list for PBXNativeTarget "Imago Capture" */;
@@ -195,10 +319,12 @@
 				0C211BBE2098E20500266669 /* Resources */,
 				409DDA4F91A6FBB088E8C186 /* [CP] Embed Pods Frameworks */,
 				61AABF64AD98B8F5042F7C43 /* [CP] Copy Pods Resources */,
+				0C0ADF2220A0D1A8001869B7 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0C0ADF1920A0D1A8001869B7 /* PBXTargetDependency */,
 			);
 			name = "Imago Capture";
 			productName = "Imago Capture";
@@ -257,6 +383,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = QuickScape;
 				TargetAttributes = {
+					0C0ADEFD20A0D1A8001869B7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0C0ADF0920A0D1A8001869B7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					0C211BBF2098E20500266669 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -289,11 +423,30 @@
 				0C211BBF2098E20500266669 /* Imago Capture */,
 				0C211BD32098E20600266669 /* Imago CaptureTests */,
 				0C211BDE2098E20600266669 /* Imago CaptureUITests */,
+				0C0ADEFD20A0D1A8001869B7 /* Imago Capture for WatchOS */,
+				0C0ADF0920A0D1A8001869B7 /* Imago Capture for WatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C0ADEFC20A0D1A8001869B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0ADF0420A0D1A8001869B7 /* Assets.xcassets in Resources */,
+				0C0ADF0220A0D1A8001869B7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0ADF0820A0D1A8001869B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0ADF1620A0D1A8001869B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C211BBE2098E20500266669 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +631,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C0ADF0620A0D1A8001869B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0ADF1220A0D1A8001869B7 /* ExtensionDelegate.swift in Sources */,
+				0C0ADF1020A0D1A8001869B7 /* InterfaceController.swift in Sources */,
+				0C0ADF1420A0D1A8001869B7 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C211BBC2098E20500266669 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,6 +671,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0C0ADF0D20A0D1A8001869B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0ADF0920A0D1A8001869B7 /* Imago Capture for WatchOS Extension */;
+			targetProxy = 0C0ADF0C20A0D1A8001869B7 /* PBXContainerItemProxy */;
+		};
+		0C0ADF1920A0D1A8001869B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0ADEFD20A0D1A8001869B7 /* Imago Capture for WatchOS */;
+			targetProxy = 0C0ADF1820A0D1A8001869B7 /* PBXContainerItemProxy */;
+		};
 		0C211BD62098E20600266669 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0C211BBF2098E20500266669 /* Imago Capture */;
@@ -521,6 +694,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0C0ADF0020A0D1A8001869B7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0ADF0120A0D1A8001869B7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		0C211BC72098E20500266669 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -540,6 +721,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C0ADF1B20A0D1A8001869B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Imago_Capture_for_WatchOS_Extension;
+				INFOPLIST_FILE = "Imago Capture for WatchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0C0ADF1C20A0D1A8001869B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Imago_Capture_for_WatchOS_Extension;
+				INFOPLIST_FILE = "Imago Capture for WatchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0C0ADF1D20A0D1A8001869B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Imago Capture for WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0C0ADF1E20A0D1A8001869B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Imago Capture for WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 		0C211BE62098E20600266669 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -754,6 +1007,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C0ADF1F20A0D1A8001869B7 /* Build configuration list for PBXNativeTarget "Imago Capture for WatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0ADF1D20A0D1A8001869B7 /* Debug */,
+				0C0ADF1E20A0D1A8001869B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0ADF2120A0D1A8001869B7 /* Build configuration list for PBXNativeTarget "Imago Capture for WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0ADF1B20A0D1A8001869B7 /* Debug */,
+				0C0ADF1C20A0D1A8001869B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0C211BBB2098E20500266669 /* Build configuration list for PBXProject "Imago Capture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
