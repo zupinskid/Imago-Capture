@@ -10,6 +10,7 @@ target 'Imago Capture' do
   # Pods for Imago Capture
   pod "CloudSight", "~> 1.0"
   pod 'SwiftyJSON', '~> 3.1'
+  pod 'Instabug'
   target 'Imago CaptureTests' do
     inherit! :search_paths
     # Pods for testing

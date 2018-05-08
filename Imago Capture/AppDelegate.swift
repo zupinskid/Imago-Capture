@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import UIKit
+import Instabug
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Instabug.start(withToken: "038499c96416b7a4df50068db16d1b66", invocationEvent: .shake)
         // Override point for customization after application launch.
         return true
     }
