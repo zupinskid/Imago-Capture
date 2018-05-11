@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Instabug.start(withToken: "038499c96416b7a4df50068db16d1b66", invocationEvent: .shake)
+        Instabug.setPromptOptionsEnabledWithBug(true, feedback: true, chat: false)
         // Override point for customization after application launch.
         return true
     }
