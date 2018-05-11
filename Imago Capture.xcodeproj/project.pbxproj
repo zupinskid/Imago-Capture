@@ -14,6 +14,7 @@
 		0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCC2098E20500266669 /* LaunchScreen.storyboard */; };
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
+		0C7E6CB420A6110B009847B4 /* apiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E6CB320A6110B009847B4 /* apiKey.swift */; };
 		0C840820209CD9C400902692 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84081F209CD9C400902692 /* MenuView.swift */; };
 		0C840822209CDBA900902692 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C840821209CDBA900902692 /* roundedButton.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
@@ -67,6 +68,7 @@
 		0C211BDF2098E20600266669 /* Imago CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imago CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7E6CB320A6110B009847B4 /* apiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiKey.swift; sourceTree = "<group>"; };
 		0C84081F209CD9C400902692 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0C840821209CDBA900902692 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 			children = (
 				0C211BC32098E20500266669 /* AppDelegate.swift */,
 				0C211BC52098E20500266669 /* ViewController.swift */,
-				0C4C018D20A4BF5000DC0535 /* apiKey.swift */,
+				0C7E6CB320A6110B009847B4 /* apiKey.swift */,
 				0C84081F209CD9C400902692 /* MenuView.swift */,
 				0C840821209CDBA900902692 /* roundedButton.swift */,
 				0CAC88882098E5AF00C5D44F /* Storyboards */,
@@ -426,7 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C211BC62098E20500266669 /* ViewController.swift in Sources */,
-				0C4C018E20A4BF5000DC0535 /* apiKey.swift in Sources */,
+				0C7E6CB420A6110B009847B4 /* apiKey.swift in Sources */,
 				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
 				0C840822209CDBA900902692 /* roundedButton.swift in Sources */,
