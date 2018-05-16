@@ -10,7 +10,7 @@ import UIKit
 
 class startViewController: UIViewController {
 
-    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var logoLabelView: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     
@@ -18,7 +18,7 @@ class startViewController: UIViewController {
         super.viewDidLoad()
         
         applyMotionEffect(toView: backgroundImageView, magnitude: 10)
-        applyMotionEffect(toView: logoImageView, magnitude: -20)
+//        applyMotionEffect(toView: logoLabelView, magnitude: -20)
         
     }
     
@@ -42,7 +42,23 @@ class startViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    @IBOutlet weak var button: UIButton!
     
+    @IBAction func animateButton(sender: UIButton) {
+        
+        sender.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: CGFloat(0.20),
+                       initialSpringVelocity: CGFloat(6.0),
+                       options: UIViewAnimationOptions.allowUserInteraction,
+                       animations: {
+                        sender.transform = CGAffineTransform.identity
+        },
+                       completion: { Void in()  }
+        )
+    }
     
 }
 
