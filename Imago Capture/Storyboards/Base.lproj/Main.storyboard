@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5Y-CD-QV4">
-                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="44"/>
                                 <color key="barTintColor" red="0.83499187231063843" green="0.90914958715438843" blue="0.95642894506454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Imago Capture" id="CSW-x0-NV8">
@@ -35,10 +36,10 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-U7-5ZI" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
-                                <rect key="frame" x="16" y="109" width="343" height="186"/>
+                                <rect key="frame" x="16" y="140" width="170" height="90"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="186" id="Fhc-xa-mbE"/>
+                                    <constraint firstAttribute="width" constant="170" id="nqO-0r-mFT"/>
                                 </constraints>
                                 <state key="normal" title="Capture">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,17 +51,17 @@
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Fhc-xa-mbE"/>
+                                        <exclude reference="nqO-0r-mFT"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="Fhc-xa-mbE"/>
+                                        <include reference="nqO-0r-mFT"/>
                                     </mask>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-ld-3cc" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
-                                <rect key="frame" x="16" y="303" width="343" height="99"/>
+                                <rect key="frame" x="194" y="140" width="170" height="90"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Analyze">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,47 +75,87 @@
                                     <segue destination="VUk-83-N8u" kind="show" id="YqU-Uh-4k2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmn-6t-lPh" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                                <rect key="frame" x="16" y="238" width="348" height="21"/>
+                                <color key="backgroundColor" red="0.83499187231063843" green="0.90914958715438843" blue="0.95642894506454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="br3-4A-NzY"/>
+                                </constraints>
+                                <state key="normal" title="Your Photos">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="br3-4A-NzY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="br3-4A-NzY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="7s4-C0-g4R" kind="show" id="eNC-N3-Ami"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Th4-ld-3cc" secondAttribute="bottom" constant="265" id="96f-tB-FO0"/>
-                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="Th4-ld-3cc" secondAttribute="leading" id="BF2-rq-8Qj"/>
-                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="centerX" secondItem="o9j-U7-5ZI" secondAttribute="centerX" id="NSF-26-T6C"/>
-                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TVf-43-UvS"/>
-                            <constraint firstAttribute="trailing" secondItem="o5Y-CD-QV4" secondAttribute="trailing" id="WOg-oD-Bs7"/>
-                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hh2-Ca-1zi"/>
-                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="top" secondItem="o5Y-CD-QV4" secondAttribute="bottom" constant="30" id="kUv-gY-cMN"/>
-                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="mNt-jq-q8f"/>
-                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="trailing" secondItem="Th4-ld-3cc" secondAttribute="trailing" id="odx-em-cG3"/>
-                            <constraint firstItem="Th4-ld-3cc" firstAttribute="top" secondItem="o9j-U7-5ZI" secondAttribute="bottom" constant="8" symbolic="YES" id="wwR-8d-dNX"/>
+                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="40e-AF-NtJ"/>
+                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="top" secondItem="Th4-ld-3cc" secondAttribute="top" id="LQb-VX-2En"/>
+                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="LXW-vs-4vO"/>
+                            <constraint firstItem="Th4-ld-3cc" firstAttribute="trailing" secondItem="Hmn-6t-lPh" secondAttribute="trailing" id="OCZ-4k-6lD"/>
+                            <constraint firstItem="Th4-ld-3cc" firstAttribute="leading" secondItem="o9j-U7-5ZI" secondAttribute="trailing" constant="8" symbolic="YES" id="OXr-Ku-4DD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Th4-ld-3cc" secondAttribute="trailing" constant="11" id="SyZ-t4-fwE"/>
+                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="baseline" secondItem="Th4-ld-3cc" secondAttribute="firstBaseline" id="U5x-dU-6cM"/>
+                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYv-ch-juM"/>
+                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="Hmn-6t-lPh" secondAttribute="leading" id="dY9-2v-MWY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hmn-6t-lPh" secondAttribute="bottom" constant="408" id="eTa-w3-uKU"/>
+                            <constraint firstAttribute="trailing" secondItem="o5Y-CD-QV4" secondAttribute="trailing" id="ee8-8o-kCb"/>
+                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="top" secondItem="o5Y-CD-QV4" secondAttribute="bottom" constant="17" id="ieq-eK-Pqk"/>
+                            <constraint firstItem="Hmn-6t-lPh" firstAttribute="top" secondItem="o9j-U7-5ZI" secondAttribute="bottom" constant="8" symbolic="YES" id="j5t-N3-kG9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="96f-tB-FO0"/>
-                                <exclude reference="NSF-26-T6C"/>
-                                <exclude reference="TVf-43-UvS"/>
-                                <exclude reference="WOg-oD-Bs7"/>
-                                <exclude reference="mNt-jq-q8f"/>
-                                <exclude reference="BF2-rq-8Qj"/>
-                                <exclude reference="hh2-Ca-1zi"/>
-                                <exclude reference="kUv-gY-cMN"/>
-                                <exclude reference="odx-em-cG3"/>
-                                <exclude reference="wwR-8d-dNX"/>
+                                <exclude reference="SyZ-t4-fwE"/>
+                                <exclude reference="eTa-w3-uKU"/>
+                                <exclude reference="40e-AF-NtJ"/>
+                                <exclude reference="LXW-vs-4vO"/>
+                                <exclude reference="ee8-8o-kCb"/>
+                                <exclude reference="LQb-VX-2En"/>
+                                <exclude reference="U5x-dU-6cM"/>
+                                <exclude reference="aYv-ch-juM"/>
+                                <exclude reference="dY9-2v-MWY"/>
+                                <exclude reference="ieq-eK-Pqk"/>
+                                <exclude reference="OCZ-4k-6lD"/>
+                                <exclude reference="OXr-Ku-4DD"/>
+                                <exclude reference="j5t-N3-kG9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="96f-tB-FO0"/>
-                                <include reference="NSF-26-T6C"/>
-                                <include reference="TVf-43-UvS"/>
-                                <include reference="WOg-oD-Bs7"/>
-                                <include reference="mNt-jq-q8f"/>
-                                <include reference="BF2-rq-8Qj"/>
-                                <include reference="hh2-Ca-1zi"/>
-                                <include reference="kUv-gY-cMN"/>
-                                <include reference="odx-em-cG3"/>
-                                <include reference="wwR-8d-dNX"/>
+                                <include reference="SyZ-t4-fwE"/>
+                                <include reference="eTa-w3-uKU"/>
+                                <include reference="40e-AF-NtJ"/>
+                                <include reference="LXW-vs-4vO"/>
+                                <include reference="ee8-8o-kCb"/>
+                                <include reference="LQb-VX-2En"/>
+                                <include reference="U5x-dU-6cM"/>
+                                <include reference="aYv-ch-juM"/>
+                                <include reference="dY9-2v-MWY"/>
+                                <include reference="ieq-eK-Pqk"/>
+                                <include reference="OCZ-4k-6lD"/>
+                                <include reference="OXr-Ku-4DD"/>
+                                <include reference="j5t-N3-kG9"/>
                             </mask>
                         </variation>
                     </view>
@@ -122,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2135.1999999999998" y="-597.78325123152717"/>
+            <point key="canvasLocation" x="-2136.8000000000002" y="-600"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="b00-Zb-ieV">
@@ -146,7 +187,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="5wa-AG-SMR"/>
+                                    <segue destination="1xl-gH-yFt" kind="show" id="DpI-yz-Eta"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imago Capture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXG-Hb-0wm">
@@ -253,7 +294,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TO-sb-NfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2868" y="-595.56650246305423"/>
+            <point key="canvasLocation" x="-3449" y="-594"/>
+        </scene>
+        <!--Your Photos-->
+        <scene sceneID="Suw-9w-NcO">
+            <objects>
+                <viewController title="Your Photos" id="7s4-C0-g4R" customClass="yourPhotosViewController" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0C-QR-5oJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hzS-5A-diN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1U-jL-cp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2135" y="82"/>
+        </scene>
+        <!--Imago Capture-->
+        <scene sceneID="i6J-C9-EW5">
+            <objects>
+                <navigationController title="Imago Capture" hidesBarsOnTap="YES" id="1xl-gH-yFt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cn5-SD-e5M">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b54-tq-x5B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afo-WD-KWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2785" y="-594"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnU-eS-1E0">
@@ -268,20 +340,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-VR-xM7">
-                                <rect key="frame" x="16" y="41" width="343" height="289"/>
+                                <rect key="frame" x="16" y="85" width="343" height="245"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NJh-uM-9jd">
-                                <rect key="frame" x="0.0" y="108" width="375" height="138"/>
+                                <rect key="frame" x="0.0" y="152" width="375" height="138"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-4P-xM7">
-                                <rect key="frame" x="177.5" y="167" width="20" height="20"/>
+                                <rect key="frame" x="178" y="211" width="20" height="20"/>
                                 <color key="color" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-ZM-6h2">
-                                <rect key="frame" x="91.5" y="366" width="193" height="30"/>
+                                <rect key="frame" x="92" y="366" width="193" height="30"/>
                                 <state key="normal" title="Choose an image to analyze">
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

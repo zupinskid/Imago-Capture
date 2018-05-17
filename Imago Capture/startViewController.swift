@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class startViewController: UIViewController {
 
@@ -18,7 +19,23 @@ class startViewController: UIViewController {
         super.viewDidLoad()
         
         applyMotionEffect(toView: backgroundImageView, magnitude: 10)
-//        applyMotionEffect(toView: logoLabelView, magnitude: -20)
+        applyMotionEffect(toView: logoLabelView, magnitude: -20)
+        
+        func addParallaxToView(vw: UIView) {
+            let amount = 100
+            
+            let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+            horizontal.minimumRelativeValue = -amount
+            horizontal.maximumRelativeValue = amount
+            
+            let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+            vertical.minimumRelativeValue = -amount
+            vertical.maximumRelativeValue = amount
+            
+            let group = UIMotionEffectGroup()
+            group.motionEffects = [horizontal, vertical]
+            vw.addMotionEffect(group)
+        }
         
     }
     
@@ -50,8 +67,8 @@ class startViewController: UIViewController {
         
         UIView.animate(withDuration: 2.0,
                        delay: 0,
-                       usingSpringWithDamping: CGFloat(0.20),
-                       initialSpringVelocity: CGFloat(6.0),
+                       usingSpringWithDamping: CGFloat(0.40),
+                       initialSpringVelocity: CGFloat(500.0),
                        options: UIViewAnimationOptions.allowUserInteraction,
                        animations: {
                         sender.transform = CGAffineTransform.identity
