@@ -15,10 +15,10 @@
 		0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCC2098E20500266669 /* LaunchScreen.storyboard */; };
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
+		0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */; };
 		0C840820209CD9C400902692 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84081F209CD9C400902692 /* MenuView.swift */; };
 		0C840822209CDBA900902692 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C840821209CDBA900902692 /* roundedButton.swift */; };
 		0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */; };
-		0C9D3A8D20ADFA70001FB47F /* ImagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3A8C20ADFA70001FB47F /* ImagePreviewVC.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
 		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
 		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
@@ -71,10 +71,10 @@
 		0C211BDF2098E20600266669 /* Imago CaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imago CaptureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePreviewVC.swift; sourceTree = "<group>"; };
 		0C84081F209CD9C400902692 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0C840821209CDBA900902692 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourPhotosViewController.swift; sourceTree = "<group>"; };
-		0C9D3A8C20ADFA70001FB47F /* ImagePreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePreviewVC.swift; path = "../../../../Downloads/photosAppiOS-master/photosApp2/ImagePreviewVC.swift"; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
 		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
 		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				0C211BC52098E20500266669 /* ViewController.swift */,
 				0C84081F209CD9C400902692 /* MenuView.swift */,
 				0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */,
-				0C9D3A8C20ADFA70001FB47F /* ImagePreviewVC.swift */,
+				0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */,
 				0C840821209CDBA900902692 /* roundedButton.swift */,
 				0C18F8F020AB5611004CE76F /* startViewController.swift */,
 				0CAC88882098E5AF00C5D44F /* Storyboards */,
@@ -433,10 +433,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9D3A8D20ADFA70001FB47F /* ImagePreviewVC.swift in Sources */,
 				0C211BC62098E20500266669 /* ViewController.swift in Sources */,
 				0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */,
 				0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */,
+				0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */,
 				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
 				0C840822209CDBA900902692 /* roundedButton.swift in Sources */,

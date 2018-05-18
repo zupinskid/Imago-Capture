@@ -47,7 +47,7 @@ class yourPhotosViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
-        let vc = ImagePreviewVC()
+        let vc = imagePreviewVC()
         vc.imgArray = self.imageArray
         vc.passedContentOffset = indexPath
         self.navigationController?.pushViewController(vc, animated: true)
