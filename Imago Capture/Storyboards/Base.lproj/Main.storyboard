@@ -12,22 +12,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View-->
+        <!--Capture-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuView" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIImageView">
+                <viewController title="Capture" id="BYZ-38-t0r" customClass="MenuView" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-U7-5ZI" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
-                                <rect key="frame" x="16" y="164" width="170" height="177"/>
+                                <rect key="frame" x="16" y="311" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="nqO-0r-mFT"/>
                                 </constraints>
                                 <state key="normal" title="Capture">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -49,10 +49,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-ld-3cc" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
-                                <rect key="frame" x="194" y="164" width="170" height="177"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="194" y="311" width="170" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Analyze">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -65,11 +65,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmn-6t-lPh" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="16" y="349" width="348" height="21"/>
-                                <color key="backgroundColor" red="0.83499187231063843" green="0.90914958715438843" blue="0.95642894506454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="br3-4A-NzY"/>
                                 </constraints>
-                                <state key="normal" title="Your Photos"/>
+                                <state key="normal" title="Your Photos">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="4"/>
@@ -92,27 +94,10 @@
                                     <segue destination="7s4-C0-g4R" kind="show" id="eNC-N3-Ami"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5Y-CD-QV4">
-                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
-                                <color key="barTintColor" red="0.83499187231063843" green="0.90914958715438843" blue="0.95642894506454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Imago Capture" id="CSW-x0-NV8">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="BKr-X4-zpr">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ax4-b0-32d">
-                                                <rect key="frame" x="16" y="11" width="22" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
-                                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="40e-AF-NtJ"/>
                             <constraint firstItem="o9j-U7-5ZI" firstAttribute="top" secondItem="Th4-ld-3cc" secondAttribute="top" id="LQb-VX-2En"/>
-                            <constraint firstItem="o5Y-CD-QV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LXW-vs-4vO"/>
                             <constraint firstItem="Th4-ld-3cc" firstAttribute="trailing" secondItem="Hmn-6t-lPh" secondAttribute="trailing" id="OCZ-4k-6lD"/>
                             <constraint firstItem="Th4-ld-3cc" firstAttribute="leading" secondItem="o9j-U7-5ZI" secondAttribute="trailing" constant="8" symbolic="YES" id="OXr-Ku-4DD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Th4-ld-3cc" secondAttribute="trailing" constant="11" id="SyZ-t4-fwE"/>
@@ -120,8 +105,6 @@
                             <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYv-ch-juM"/>
                             <constraint firstItem="o9j-U7-5ZI" firstAttribute="leading" secondItem="Hmn-6t-lPh" secondAttribute="leading" id="dY9-2v-MWY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hmn-6t-lPh" secondAttribute="bottom" constant="408" id="eTa-w3-uKU"/>
-                            <constraint firstAttribute="trailing" secondItem="o5Y-CD-QV4" secondAttribute="trailing" id="ee8-8o-kCb"/>
-                            <constraint firstItem="o9j-U7-5ZI" firstAttribute="top" secondItem="o5Y-CD-QV4" secondAttribute="bottom" constant="32" id="ieq-eK-Pqk"/>
                             <constraint firstItem="Hmn-6t-lPh" firstAttribute="top" secondItem="o9j-U7-5ZI" secondAttribute="bottom" constant="8" symbolic="YES" id="j5t-N3-kG9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -129,14 +112,10 @@
                             <mask key="constraints">
                                 <exclude reference="SyZ-t4-fwE"/>
                                 <exclude reference="eTa-w3-uKU"/>
-                                <exclude reference="40e-AF-NtJ"/>
-                                <exclude reference="LXW-vs-4vO"/>
-                                <exclude reference="ee8-8o-kCb"/>
                                 <exclude reference="LQb-VX-2En"/>
                                 <exclude reference="U5x-dU-6cM"/>
                                 <exclude reference="aYv-ch-juM"/>
                                 <exclude reference="dY9-2v-MWY"/>
-                                <exclude reference="ieq-eK-Pqk"/>
                                 <exclude reference="OCZ-4k-6lD"/>
                                 <exclude reference="OXr-Ku-4DD"/>
                                 <exclude reference="j5t-N3-kG9"/>
@@ -146,25 +125,29 @@
                             <mask key="constraints">
                                 <include reference="SyZ-t4-fwE"/>
                                 <include reference="eTa-w3-uKU"/>
-                                <include reference="40e-AF-NtJ"/>
-                                <include reference="LXW-vs-4vO"/>
-                                <include reference="ee8-8o-kCb"/>
                                 <include reference="LQb-VX-2En"/>
                                 <include reference="U5x-dU-6cM"/>
                                 <include reference="aYv-ch-juM"/>
                                 <include reference="dY9-2v-MWY"/>
-                                <include reference="ieq-eK-Pqk"/>
                                 <include reference="OCZ-4k-6lD"/>
                                 <include reference="OXr-Ku-4DD"/>
                                 <include reference="j5t-N3-kG9"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Ped-z5-6dr"/>
+                    <navigationItem key="navigationItem" title="Imago Capture" prompt="Capture" id="Ped-z5-6dr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="BKr-X4-zpr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ax4-b0-32d">
+                                <rect key="frame" x="337" y="45" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2136.8000000000002" y="-600"/>
+            <point key="canvasLocation" x="-1409" y="-1366"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="b00-Zb-ieV">
@@ -174,7 +157,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="NVR-sl-KY6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-white-wave16259134o8q356795" translatesAutoresizingMaskIntoConstraints="NO" id="NVR-sl-KY6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3P-Tz-MEk" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
@@ -191,13 +174,13 @@
                                     <segue destination="1xl-gH-yFt" kind="show" id="DpI-yz-Eta"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imago Capture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXG-Hb-0wm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imago Capture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXG-Hb-0wm">
                                 <rect key="frame" x="16" y="229" width="343" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="GUB-yx-gSn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -295,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TO-sb-NfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3449" y="-594"/>
+            <point key="canvasLocation" x="-3450.4000000000001" y="-594.0886699507389"/>
         </scene>
         <!--Your Photos-->
         <scene sceneID="Suw-9w-NcO">
@@ -310,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1U-jL-cp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2135" y="82"/>
+            <point key="canvasLocation" x="-2137" y="468"/>
         </scene>
         <!--Imago Capture-->
         <scene sceneID="i6J-C9-EW5">
@@ -319,6 +302,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cn5-SD-e5M">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83499187231063843" green="0.90914958715438843" blue="0.95642894506454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b54-tq-x5B"/>
@@ -500,7 +484,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ov0-8v-61R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1284" y="-594"/>
+            <point key="canvasLocation" x="-1126" y="-600"/>
         </scene>
         <!--Capture-->
         <scene sceneID="5wO-n8-Uwd">
@@ -514,7 +498,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-sH-PbG" customClass="PreviewView" customModule="iOS_CoreML_Inceptionv3" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-sH-PbG" customClass="PreviewView" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3d-UR-zBe">
@@ -563,12 +547,88 @@
             </objects>
             <point key="canvasLocation" x="-383" y="68"/>
         </scene>
+        <!--Selection-->
+        <scene sceneID="wdX-tB-P2t">
+            <objects>
+                <viewController title="Selection" id="KXJ-FL-h28" customClass="MenuView" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IfY-CD-xZl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-P3-dX1" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                                <rect key="frame" x="16" y="68" width="343" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="captureCapture"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capture:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PO1-B5-kbx">
+                                <rect key="frame" x="17" y="255" width="68" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take Photos and Videos with object and face detection in real time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1U-0l-Rzp">
+                                <rect key="frame" x="85" y="259" width="275" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analyze:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-gR-rzE">
+                                <rect key="frame" x="17" y="290" width="68" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View and detect objects that are within a previously taken photo." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zou-kX-tid">
+                                <rect key="frame" x="85" y="294" width="274" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exy-Gd-idr" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                                <rect key="frame" x="17" y="350" width="343" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mapCapture"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Fei-c5-ZEh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Imago Capture" prompt="Capture" id="Bxb-HV-HcD">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5gk-K8-oh2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="H1N-2s-dEe">
+                                <rect key="frame" x="337" y="45" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VA-aU-TLO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1967.2" y="-600"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="bg" width="2000" height="1333"/>
+        <image name="captureCapture" width="955" height="352"/>
         <image name="glowing_circle-green" width="512" height="512"/>
+        <image name="green-white-wave16259134o8q356795" width="3024" height="3024"/>
+        <image name="mapCapture" width="1600" height="900"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gMv-6C-G3n"/>
+        <segue reference="YqU-Uh-4k2"/>
     </inferredMetricsTieBreakers>
 </document>
