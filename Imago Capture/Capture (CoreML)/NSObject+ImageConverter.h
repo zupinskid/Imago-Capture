@@ -2,7 +2,7 @@
 //  NSObject+ImageConverter.h
 //  Imago Capture
 //
-//  Created by Kyle Micheal Scott Jr. on 5/20/18.
+//  Created by Kyle S on 5/20/18.
 //  Copyright © 2018 QuickScape. All rights reserved.
 //
 
