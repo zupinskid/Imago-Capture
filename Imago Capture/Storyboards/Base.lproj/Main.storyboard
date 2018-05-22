@@ -44,6 +44,9 @@
                                         <include reference="nqO-0r-mFT"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="9Hw-lf-S3F" kind="show" id="rel-n9-MBH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-ld-3cc" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="194" y="164" width="170" height="177"/>
@@ -134,9 +137,9 @@
                                 <exclude reference="aYv-ch-juM"/>
                                 <exclude reference="dY9-2v-MWY"/>
                                 <exclude reference="ieq-eK-Pqk"/>
-                                <exclude reference="j5t-N3-kG9"/>
                                 <exclude reference="OCZ-4k-6lD"/>
                                 <exclude reference="OXr-Ku-4DD"/>
+                                <exclude reference="j5t-N3-kG9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -151,9 +154,9 @@
                                 <include reference="aYv-ch-juM"/>
                                 <include reference="dY9-2v-MWY"/>
                                 <include reference="ieq-eK-Pqk"/>
-                                <include reference="j5t-N3-kG9"/>
                                 <include reference="OCZ-4k-6lD"/>
                                 <include reference="OXr-Ku-4DD"/>
+                                <include reference="j5t-N3-kG9"/>
                             </mask>
                         </variation>
                     </view>
@@ -251,12 +254,12 @@
                         <viewLayoutGuide key="safeArea" id="v78-EQ-MQj"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="HUl-kv-6hn"/>
                                 <exclude reference="AhB-Vj-DUh"/>
                                 <exclude reference="Qtn-KN-hof"/>
                                 <exclude reference="Trp-2V-Kcd"/>
                                 <exclude reference="YhJ-Pk-wPm"/>
                                 <exclude reference="ylN-5W-hcL"/>
+                                <exclude reference="HUl-kv-6hn"/>
                                 <exclude reference="6HQ-N8-dE2"/>
                                 <exclude reference="Q2k-oI-oLX"/>
                                 <exclude reference="Xaa-bH-8ku"/>
@@ -268,12 +271,12 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="HUl-kv-6hn"/>
                                 <include reference="AhB-Vj-DUh"/>
                                 <include reference="Qtn-KN-hof"/>
                                 <include reference="Trp-2V-Kcd"/>
                                 <include reference="YhJ-Pk-wPm"/>
                                 <include reference="ylN-5W-hcL"/>
+                                <include reference="HUl-kv-6hn"/>
                                 <include reference="6HQ-N8-dE2"/>
                                 <include reference="Q2k-oI-oLX"/>
                                 <include reference="Xaa-bH-8ku"/>
@@ -325,10 +328,10 @@
             </objects>
             <point key="canvasLocation" x="-2785" y="-594"/>
         </scene>
-        <!--View Controller-->
+        <!--Analyze-->
         <scene sceneID="GnU-eS-1E0">
             <objects>
-                <viewController id="VUk-83-N8u" customClass="ViewController" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VUk-83-N8u" customClass="Analyze" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mvp-jM-uK2"/>
                         <viewControllerLayoutGuide type="bottom" id="AuT-np-fbY"/>
@@ -499,12 +502,73 @@
             </objects>
             <point key="canvasLocation" x="-1284" y="-594"/>
         </scene>
+        <!--Capture-->
+        <scene sceneID="5wO-n8-Uwd">
+            <objects>
+                <viewController id="9Hw-lf-S3F" customClass="Capture" customModule="Imago_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kDD-lx-UPg"/>
+                        <viewControllerLayoutGuide type="bottom" id="l1L-JL-E73"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yV8-7A-YbK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-sH-PbG" customClass="PreviewView" customModule="iOS_CoreML_Inceptionv3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3d-UR-zBe">
+                                        <rect key="frame" x="0.0" y="600" width="375" height="178"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-sy-4j5">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="h7Y-sy-4j5" secondAttribute="bottom" id="BlC-oF-ajg"/>
+                                            <constraint firstAttribute="trailing" secondItem="h7Y-sy-4j5" secondAttribute="trailing" id="KoE-jk-qWD"/>
+                                            <constraint firstItem="h7Y-sy-4j5" firstAttribute="leading" secondItem="k3d-UR-zBe" secondAttribute="leading" id="hXu-qK-Wvv"/>
+                                            <constraint firstItem="h7Y-sy-4j5" firstAttribute="top" secondItem="k3d-UR-zBe" secondAttribute="top" id="nsZ-Si-ZSN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="k3d-UR-zBe" firstAttribute="top" secondItem="hgc-sH-PbG" secondAttribute="top" constant="600" id="0mb-Rx-P19"/>
+                                    <constraint firstAttribute="trailing" secondItem="k3d-UR-zBe" secondAttribute="trailing" id="Amd-Ea-TvL"/>
+                                    <constraint firstItem="k3d-UR-zBe" firstAttribute="leading" secondItem="hgc-sH-PbG" secondAttribute="leading" id="cAj-kB-aSa"/>
+                                    <constraint firstAttribute="bottom" secondItem="k3d-UR-zBe" secondAttribute="bottom" id="enx-3e-xlt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hgc-sH-PbG" firstAttribute="top" secondItem="yV8-7A-YbK" secondAttribute="top" id="Bxx-hD-JyQ"/>
+                            <constraint firstItem="hgc-sH-PbG" firstAttribute="leading" secondItem="yV8-7A-YbK" secondAttribute="leading" id="InE-03-T67"/>
+                            <constraint firstItem="l1L-JL-E73" firstAttribute="top" secondItem="hgc-sH-PbG" secondAttribute="bottom" id="Pnc-1v-YfK"/>
+                            <constraint firstAttribute="trailing" secondItem="hgc-sH-PbG" secondAttribute="trailing" id="g3F-lV-q4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u5j-yb-ZNu"/>
+                    </view>
+                    <connections>
+                        <outlet property="predictLabel" destination="h7Y-sy-4j5" id="iMu-3w-krz"/>
+                        <outlet property="previewView" destination="hgc-sH-PbG" id="Xuo-oL-TmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgS-kr-OJl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="68"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="2000" height="1333"/>
         <image name="glowing_circle-green" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YqU-Uh-4k2"/>
+        <segue reference="gMv-6C-G3n"/>
     </inferredMetricsTieBreakers>
 </document>

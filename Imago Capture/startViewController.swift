@@ -2,7 +2,7 @@
 //  startViewController.swift
 //  Imago Capture
 //
-//  Created by ios6 on 5/15/18.
+//  Created by Kyle S on 5/15/18.
 //  Copyright © 2018 QuickScape. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  yourPhotosViewController.swift
 //  Imago Capture
 //
-//  Created by ios6 on 5/17/18.
+//  Created by Kyle S on 5/17/18.
 //  Copyright © 2018 QuickScape. All rights reserved.
 //
 

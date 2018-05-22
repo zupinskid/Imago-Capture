@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18F8F020AB5611004CE76F /* startViewController.swift */; };
 		0C211BC42098E20500266669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC32098E20500266669 /* AppDelegate.swift */; };
-		0C211BC62098E20500266669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC52098E20500266669 /* ViewController.swift */; };
+		0C211BC62098E20500266669 /* AnalyzeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC52098E20500266669 /* AnalyzeController.swift */; };
 		0C211BC92098E20500266669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BC72098E20500266669 /* Main.storyboard */; };
 		0C211BCB2098E20500266669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCA2098E20500266669 /* Assets.xcassets */; };
 		0C211BCE2098E20500266669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BCC2098E20500266669 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,7 @@
 		0C840822209CDBA900902692 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C840821209CDBA900902692 /* roundedButton.swift */; };
 		0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
+		2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */; };
 		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
 		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
 		D525F74E8DB929A1EC7E8226 /* Pods_Imago_CaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */; };
@@ -60,7 +61,7 @@
 		0C18F8F020AB5611004CE76F /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		0C211BC02098E20500266669 /* Imago Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imago Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BC32098E20500266669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C211BC52098E20500266669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C211BC52098E20500266669 /* AnalyzeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeController.swift; sourceTree = "<group>"; };
 		0C211BC82098E20500266669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C211BCA2098E20500266669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C211BCD2098E20500266669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +77,11 @@
 		0C840821209CDBA900902692 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourPhotosViewController.swift; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
+		2B6992C220B216AD00F445BD /* ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConverter.h; sourceTree = "<group>"; };
+		2B6992C320B216D400F445BD /* Imago Capture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Imago Capture-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B6992C420B216D500F445BD /* NSObject+ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ImageConverter.h"; sourceTree = "<group>"; };
+		2B6992D020B219A600F445BD /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
 		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 		78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_CaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,16 +146,18 @@
 			isa = PBXGroup;
 			children = (
 				0C211BC32098E20500266669 /* AppDelegate.swift */,
-				0C211BC52098E20500266669 /* ViewController.swift */,
+				0C211BC52098E20500266669 /* AnalyzeController.swift */,
 				0C84081F209CD9C400902692 /* MenuView.swift */,
+				0C840821209CDBA900902692 /* roundedButton.swift */,
 				0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */,
 				0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */,
-				0C840821209CDBA900902692 /* roundedButton.swift */,
+				2B6992CB20B2198700F445BD /* Capture (CoreML) */,
 				0C18F8F020AB5611004CE76F /* startViewController.swift */,
 				0CAC88882098E5AF00C5D44F /* Storyboards */,
 				0C211BCA2098E20500266669 /* Assets.xcassets */,
 				0C211BCC2098E20500266669 /* LaunchScreen.storyboard */,
 				0C211BCF2098E20500266669 /* Info.plist */,
+				2B6992C320B216D400F445BD /* Imago Capture-Bridging-Header.h */,
 			);
 			path = "Imago Capture";
 			sourceTree = "<group>";
@@ -179,6 +187,17 @@
 				0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B6992CB20B2198700F445BD /* Capture (CoreML) */ = {
+			isa = PBXGroup;
+			children = (
+				2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */,
+				2B6992D020B219A600F445BD /* CaptureController.swift */,
+				2B6992C220B216AD00F445BD /* ImageConverter.h */,
+				2B6992C420B216D500F445BD /* NSObject+ImageConverter.h */,
+			);
+			path = "Capture (CoreML)";
 			sourceTree = "<group>";
 		};
 		957822ECC5D53F90C0E77603 /* Pods */ = {
@@ -277,6 +296,7 @@
 				TargetAttributes = {
 					0C211BBF2098E20500266669 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					0C211BD32098E20600266669 = {
@@ -433,11 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C211BC62098E20500266669 /* ViewController.swift in Sources */,
+				0C211BC62098E20500266669 /* AnalyzeController.swift in Sources */,
 				0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */,
 				0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */,
 				0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */,
 				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
+				2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
 				0C840822209CDBA900902692 /* roundedButton.swift in Sources */,
 			);
@@ -606,13 +627,16 @@
 			baseConfigurationReference = B1354B9AF57116B903106963 /* Pods-Imago Capture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7VZ9SCP79Z;
 				INFOPLIST_FILE = "Imago Capture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture";
+				PRODUCT_BUNDLE_IDENTIFIER = "QuickScape.Imago-Capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Imago Capture/Imago Capture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,13 +647,15 @@
 			baseConfigurationReference = 2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7VZ9SCP79Z;
 				INFOPLIST_FILE = "Imago Capture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "QS.Imago-Capture";
+				PRODUCT_BUNDLE_IDENTIFIER = "QuickScape.Imago-Capture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Imago Capture/Imago Capture-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
