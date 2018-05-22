@@ -21,6 +21,8 @@
 		0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
 		2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */; };
+		2BD1AFD620B4D9B8005E9D6F /* AlertImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */; };
+		2BD1AFD720B4D9B8005E9D6F /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */; };
 		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
 		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
 		D525F74E8DB929A1EC7E8226 /* Pods_Imago_CaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */; };
@@ -82,6 +84,8 @@
 		2B6992C420B216D500F445BD /* NSObject+ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ImageConverter.h"; sourceTree = "<group>"; };
 		2B6992D020B219A600F445BD /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
 		2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertImage.swift; sourceTree = "<group>"; };
+		2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
 		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
 		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 		78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_CaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,8 +151,7 @@
 			children = (
 				0C211BC32098E20500266669 /* AppDelegate.swift */,
 				0C211BC52098E20500266669 /* AnalyzeController.swift */,
-				0C84081F209CD9C400902692 /* MenuView.swift */,
-				0C840821209CDBA900902692 /* roundedButton.swift */,
+				2BD1AFD820B4DD48005E9D6F /* Interface */,
 				0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */,
 				0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */,
 				2B6992CB20B2198700F445BD /* Capture (CoreML) */,
@@ -198,6 +201,17 @@
 				2B6992C420B216D500F445BD /* NSObject+ImageConverter.h */,
 			);
 			path = "Capture (CoreML)";
+			sourceTree = "<group>";
+		};
+		2BD1AFD820B4DD48005E9D6F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0C84081F209CD9C400902692 /* MenuView.swift */,
+				2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */,
+				2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */,
+				0C840821209CDBA900902692 /* roundedButton.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		957822ECC5D53F90C0E77603 /* Pods */ = {
@@ -457,6 +471,8 @@
 				0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */,
 				0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */,
 				0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */,
+				2BD1AFD620B4D9B8005E9D6F /* AlertImage.swift in Sources */,
+				2BD1AFD720B4D9B8005E9D6F /* ImageResize.swift in Sources */,
 				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
 				2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
