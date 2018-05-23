@@ -41,7 +41,7 @@ class MenuView: UIViewController {
                                          style: .cancel, handler: nil)
         
         mapCameraAlert.addAction(cancelAction)
-        self.present(cameraAlert, animated: true, completion: nil)
+        self.present(mapCameraAlert, animated: true, completion: nil)
     }
     
     @IBAction func photoGallery(_ sender: Any) {
@@ -56,7 +56,7 @@ class MenuView: UIViewController {
                                          style: .cancel, handler: nil)
         
         photoGalleryAlert.addAction(cancelAction)
-        self.present(cameraAlert, animated: true, completion: nil)
+        self.present(photoGalleryAlert, animated: true, completion: nil)
     }
 }
 
