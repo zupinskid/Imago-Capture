@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18F8F020AB5611004CE76F /* startViewController.swift */; };
+		0C1BDF1820B5E535000A1B7B /* AlertImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BDF1720B5E535000A1B7B /* AlertImage.swift */; };
+		0C1BDF1A20B5E585000A1B7B /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BDF1920B5E585000A1B7B /* ImageResize.swift */; };
+		0C1BDF1C20B5E5AC000A1B7B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BDF1B20B5E5AC000A1B7B /* MenuView.swift */; };
+		0C1BDF1E20B5E5E7000A1B7B /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BDF1D20B5E5E7000A1B7B /* roundedButton.swift */; };
 		0C211BC42098E20500266669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC32098E20500266669 /* AppDelegate.swift */; };
 		0C211BC62098E20500266669 /* AnalyzeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BC52098E20500266669 /* AnalyzeController.swift */; };
 		0C211BC92098E20500266669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C211BC72098E20500266669 /* Main.storyboard */; };
@@ -16,13 +20,9 @@
 		0C211BD92098E20600266669 /* Imago_CaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BD82098E20600266669 /* Imago_CaptureTests.swift */; };
 		0C211BE42098E20600266669 /* Imago_CaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */; };
 		0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */; };
-		0C840820209CD9C400902692 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84081F209CD9C400902692 /* MenuView.swift */; };
-		0C840822209CDBA900902692 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C840821209CDBA900902692 /* roundedButton.swift */; };
 		0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */; };
 		0CAC88872098E5AA00C5D44F /* iPad-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */; };
 		2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */; };
-		2BD1AFD620B4D9B8005E9D6F /* AlertImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */; };
-		2BD1AFD720B4D9B8005E9D6F /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */; };
 		69F024B8FCC3AB76386266C5 /* Pods_Imago_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */; };
 		BF1B07966807C1022C291A43 /* Pods_Imago_CaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24C1E54F03309262C021F92 /* Pods_Imago_CaptureUITests.framework */; };
 		D525F74E8DB929A1EC7E8226 /* Pods_Imago_CaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */; };
@@ -61,6 +61,10 @@
 /* Begin PBXFileReference section */
 		09C138F521A17485D0A7FECB /* Pods_Imago_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C18F8F020AB5611004CE76F /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		0C1BDF1720B5E535000A1B7B /* AlertImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertImage.swift; sourceTree = "<group>"; };
+		0C1BDF1920B5E585000A1B7B /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
+		0C1BDF1B20B5E5AC000A1B7B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0C1BDF1D20B5E5E7000A1B7B /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0C211BC02098E20500266669 /* Imago Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imago Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C211BC32098E20500266669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C211BC52098E20500266669 /* AnalyzeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeController.swift; sourceTree = "<group>"; };
@@ -75,8 +79,6 @@
 		0C211BE32098E20600266669 /* Imago_CaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imago_CaptureUITests.swift; sourceTree = "<group>"; };
 		0C211BE52098E20600266669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C6E5BC720AF4F08001A9CE5 /* imagePreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePreviewVC.swift; sourceTree = "<group>"; };
-		0C84081F209CD9C400902692 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		0C840821209CDBA900902692 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		0C9D3A8A20ADF8A7001FB47F /* yourPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourPhotosViewController.swift; sourceTree = "<group>"; };
 		0CAC88862098E5AA00C5D44F /* iPad-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad-Storyboard.storyboard"; sourceTree = "<group>"; };
 		2B6992C220B216AD00F445BD /* ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConverter.h; sourceTree = "<group>"; };
@@ -84,8 +86,6 @@
 		2B6992C420B216D500F445BD /* NSObject+ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ImageConverter.h"; sourceTree = "<group>"; };
 		2B6992D020B219A600F445BD /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
 		2B6992D120B2270F00F445BD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertImage.swift; sourceTree = "<group>"; };
-		2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
 		2BD471618F9EEEB99F2E28F8 /* Pods-Imago Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago Capture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago Capture/Pods-Imago Capture.release.xcconfig"; sourceTree = "<group>"; };
 		2D16FAA04CED84404851E8B0 /* Pods-Imago CaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imago CaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imago CaptureTests/Pods-Imago CaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 		78E687C212D03F6CEC95AED1 /* Pods_Imago_CaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imago_CaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,10 +206,10 @@
 		2BD1AFD820B4DD48005E9D6F /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				0C84081F209CD9C400902692 /* MenuView.swift */,
-				2BD1AFD420B4D9B7005E9D6F /* AlertImage.swift */,
-				2BD1AFD520B4D9B8005E9D6F /* ImageResize.swift */,
-				0C840821209CDBA900902692 /* roundedButton.swift */,
+				0C1BDF1720B5E535000A1B7B /* AlertImage.swift */,
+				0C1BDF1B20B5E5AC000A1B7B /* MenuView.swift */,
+				0C1BDF1920B5E585000A1B7B /* ImageResize.swift */,
+				0C1BDF1D20B5E5E7000A1B7B /* roundedButton.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -468,15 +468,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C211BC62098E20500266669 /* AnalyzeController.swift in Sources */,
+				0C1BDF1E20B5E5E7000A1B7B /* roundedButton.swift in Sources */,
 				0C18F8F120AB5611004CE76F /* startViewController.swift in Sources */,
+				0C1BDF1820B5E535000A1B7B /* AlertImage.swift in Sources */,
 				0C9D3A8B20ADF8A7001FB47F /* yourPhotosViewController.swift in Sources */,
 				0C6E5BC820AF4F08001A9CE5 /* imagePreviewVC.swift in Sources */,
-				2BD1AFD620B4D9B8005E9D6F /* AlertImage.swift in Sources */,
-				2BD1AFD720B4D9B8005E9D6F /* ImageResize.swift in Sources */,
-				0C840820209CD9C400902692 /* MenuView.swift in Sources */,
+				0C1BDF1C20B5E5AC000A1B7B /* MenuView.swift in Sources */,
+				0C1BDF1A20B5E585000A1B7B /* ImageResize.swift in Sources */,
 				2B6992D220B2271000F445BD /* Inceptionv3.mlmodel in Sources */,
 				0C211BC42098E20500266669 /* AppDelegate.swift in Sources */,
-				0C840822209CDBA900902692 /* roundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

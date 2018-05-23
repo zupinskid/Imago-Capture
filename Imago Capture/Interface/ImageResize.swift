@@ -2,7 +2,7 @@
 //  ImageResize.swift
 //  Imago Capture
 //
-//  Created by Kyle Micheal Scott Jr. on 5/22/18.
+//  Created by ios6 on 5/23/18.
 //  Copyright © 2018 QuickScape. All rights reserved.
 //
 
