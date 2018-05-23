@@ -20,7 +20,7 @@ class MenuView: UIViewController {
                                             message: "Capture: Take Photos and Videos with object and face detection in real time. \n Analyze: View and detect objects that are within a previously taken photo.",
                                             preferredStyle: UIAlertControllerStyle.alert)
         
-        let image = UIImage(named: "camera_lens-captureCapturet")
+        let image = UIImage(named: "camera_lens-captureCapture")
         cameraAlert.addImage(image: image!)
         
         let cancelAction = UIAlertAction(title: "Ok",
@@ -34,7 +34,7 @@ class MenuView: UIViewController {
                                                message: "Capture: View a live AR View of the real world with location data, showing you live store detection and more.",
                                                preferredStyle: UIAlertControllerStyle.alert)
         
-        let image = UIImage(named: "camera_lens-captureCapturet")
+        let image = UIImage(named: "camera_lens-captureCapture")
         mapCameraAlert.addImage(image: image!)
         
         let cancelAction = UIAlertAction(title: "Ok",
@@ -49,7 +49,7 @@ class MenuView: UIViewController {
                                                   message: "View your photo gallery.",
                                                   preferredStyle: UIAlertControllerStyle.alert)
         
-        let image = UIImage(named: "camera_lens-captureCapturet")
+        let image = UIImage(named: "camera_lens-captureCapture")
         photoGalleryAlert.addImage(image: image!)
         
         let cancelAction = UIAlertAction(title: "Ok",
