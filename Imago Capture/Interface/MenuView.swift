@@ -2,7 +2,7 @@
 //  MenuView.swift
 //  Imago Capture
 //
-//  Created by Kyle S on 5/4/18.
+//  Created by ios6 on 5/23/18.
 //  Copyright © 2018 QuickScape. All rights reserved.
 //
 
@@ -46,8 +46,8 @@ class MenuView: UIViewController {
     
     @IBAction func photoGallery(_ sender: Any) {
         let photoGalleryAlert = UIAlertController(title: "Gallery",
-                                               message: "View your photo gallery.",
-                                               preferredStyle: UIAlertControllerStyle.alert)
+                                                  message: "View your photo gallery.",
+                                                  preferredStyle: UIAlertControllerStyle.alert)
         
         let image = UIImage(named: "camera_lens-captureCapturet")
         photoGalleryAlert.addImage(image: image!)
@@ -59,4 +59,3 @@ class MenuView: UIViewController {
         self.present(cameraAlert, animated: true, completion: nil)
     }
 }
-
