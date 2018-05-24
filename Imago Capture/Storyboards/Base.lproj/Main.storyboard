@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TjL-0F-dV8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TjL-0F-dV8">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Capture-->
         <scene sceneID="tne-QT-ifu">
@@ -182,16 +177,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-VR-xM7">
-                                <rect key="frame" x="16" y="65" width="343" height="376"/>
+                                <rect key="frame" x="16" y="109" width="343" height="332"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NJh-uM-9jd">
-                                <rect key="frame" x="0.0" y="132" width="375" height="138"/>
+                                <rect key="frame" x="0.0" y="176" width="375" height="138"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-4P-xM7">
-                                <rect key="frame" x="178" y="191" width="20" height="20"/>
+                                <rect key="frame" x="178" y="235" width="20" height="20"/>
                                 <color key="color" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-ZM-6h2">
@@ -411,7 +406,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TXr-G3-9Mx">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.83499187230000005" green="0.90914958720000005" blue="0.95642894509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="yb9-jS-gc2" kind="relationship" relationship="rootViewController" id="LPC-ge-P6u"/>
@@ -419,7 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bt4-jg-mnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2785" y="-594"/>
+            <point key="canvasLocation" x="-2743" y="-594"/>
         </scene>
         <!--Selection-->
         <scene sceneID="AEw-iT-xUm">
@@ -429,7 +423,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-kb-j7O" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-kb-j7O" customClass="DesignableButton" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="6" y="128" width="363" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -438,12 +432,15 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-T3-ZJi" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
-                                <rect key="frame" x="6" y="244" width="363" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-T3-ZJi" customClass="DesignableButton" customModule="Imago_Capture" customModuleProvider="target">
+                                <rect key="frame" x="7" y="244" width="363" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title=" Maps " image="icons8-north_direction">
@@ -451,7 +448,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -477,7 +474,7 @@
                                     <action selector="MapsCamera:" destination="yb9-jS-gc2" eventType="touchUpInside" id="jh6-QH-FJu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndM-QO-ZNQ" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndM-QO-ZNQ" customClass="DesignableButton" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="6" y="360" width="363" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -486,7 +483,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -501,6 +498,19 @@
                                     <action selector="photoGallery:" destination="yb9-jS-gc2" eventType="touchUpInside" id="a0h-0p-K6h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZs-dy-404" customClass="DesignableButton" customModule="Imago_Capture" customModuleProvider="target">
+                                <rect key="frame" x="16" y="135" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32999256249999998" green="0.62738287449999997" blue="0.9088379741" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Dual" image="icons8-cameras-24">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="pv7-g9-yOr"/>
@@ -509,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlX-Nu-Mvw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2036" y="-594"/>
+            <point key="canvasLocation" x="-2036" y="-594.0886699507389"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="efW-7n-Sg9">
@@ -522,7 +532,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uyqvnsbt" translatesAutoresizingMaskIntoConstraints="NO" id="AyX-81-hea">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSj-I9-IZq" customClass="RoundedButton" customModule="Imago_Capture" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSj-I9-IZq" customClass="DesignableButton" customModule="Imago_Capture" customModuleProvider="target">
                                 <rect key="frame" x="16" y="727" width="343" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -646,11 +656,12 @@
     <resources>
         <image name="generators__gradients____halftone_effect_filters6-1" width="400" height="400"/>
         <image name="icons8-camera_filled" width="25" height="25"/>
+        <image name="icons8-cameras-24" width="24" height="24"/>
         <image name="icons8-ios_photos" width="24" height="24"/>
         <image name="icons8-north_direction" width="24" height="24"/>
         <image name="uyqvnsbt" width="2160" height="3140"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YqU-Uh-4k2"/>
+        <segue reference="gMv-6C-G3n"/>
     </inferredMetricsTieBreakers>
 </document>

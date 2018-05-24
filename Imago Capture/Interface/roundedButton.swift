@@ -9,57 +9,101 @@
 import UIKit
 
 @IBDesignable
-class RoundedButton:UIButton {
+class DesignableView: UIView {
+}
+
+@IBDesignable
+class DesignableButton: UIButton {
+}
+
+@IBDesignable
+class DesignableLabel: UILabel {
+}
+
+extension UIView {
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
         }
-    }
-    //Normal state bg and border
-    @IBInspectable var normalBorderColor: UIColor? {
-        didSet {
-            layer.borderColor = normalBorderColor?.cgColor
-        }
-    }
-    
-    @IBInspectable var normalBackgroundColor: UIColor? {
-        didSet {
-        }
-    }
-    
-    
-    //Highlighted state bg and border
-    @IBInspectable var highlightedBorderColor: UIColor?
-    
-    @IBInspectable var highlightedBackgroundColor: UIColor? {
-        didSet {
-            setBgColorForState(color: highlightedBackgroundColor, forState: .highlighted)
+        set {
+            layer.cornerRadius = newValue
         }
     }
     
-    
-    private func setBgColorForState(color: UIColor?, forState: UIControlState){
-        if color != nil {
-            
+    @IBInspectable
+    var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
         }
-        else {
-            setBackgroundImage(nil, for: forState)
+        set {
+            layer.borderWidth = newValue
         }
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        layer.cornerRadius = layer.frame.height / 2
-        clipsToBounds = true
-        
-        if borderWidth > 0 {
-            
-            if state == .highlighted && highlightedBorderColor != nil{
-                layer.borderColor = highlightedBorderColor!.cgColor
+    @IBInspectable
+    var borderColor: UIColor? {
+        get {
+            if let color = layer.borderColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.borderColor = color.cgColor
+            } else {
+                layer.borderColor = nil
             }
         }
     }
     
+    @IBInspectable
+    var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowColor: UIColor? {
+        get {
+            if let color = layer.shadowColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            if let color = newValue {
+                layer.shadowColor = color.cgColor
+            } else {
+                layer.shadowColor = nil
+            }
+        }
+    }
 }
+
