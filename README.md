@@ -1,1 +1,1 @@
-This is one of my many apps I have made during my Highschool years. This was created for a project in my coding class. 
+This is one of the many apps I created during high school, specifically for a project in my coding class. The app uses the Google Vision API to detect faces and text in images. If a face is detected, it analyzes the expression and tells the user what emotion is being shown. If any writing is found, the app displays the detected text on the screen.
